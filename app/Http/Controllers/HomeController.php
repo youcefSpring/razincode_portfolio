@@ -47,7 +47,7 @@ class HomeController extends Controller
 
         $setting = Setting::first();
 
-        return view('home',compact('user','experiences','educations','skills',
+        return view('front.index',compact('user','experiences','educations','skills',
                                     'services','categories','portfolios','setting','reviewers'));
     }
 }
