@@ -1,5 +1,5 @@
  <!-- Carousel Start -->
- <div class="container-fluid px-0">
+ <div class="container-fluid px-0" style="">
     <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
         <ol class="carousel-indicators">
             <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
@@ -7,7 +7,7 @@
         </ol>
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
-                <img src="{{asset('front/img/carousel-1.jpg')}}" class="img-fluid" alt="First slide">
+                <img src="{{asset('front/img/carousel-3.jpg')}}" class="img-fluid" alt="First slide">
                 <div class="carousel-caption">
                     <div class="container carousel-content">
                         <h6 class="text-secondary h4 animated fadeInUp">Best IT Solutions</h6>
@@ -18,8 +18,8 @@
                     </div>
                 </div>
             </div>
-            <div class="carousel-item">
-                <img src="{{asset('front/img/carousel-2.jpg')}}" class="img-fluid" alt="Second slide">
+            {{-- <div class="carousel-item">
+                <img src="{{asset('front/img/project-1.jpg')}}" class="img-fluid" alt="Second slide">
                 <div class="carousel-caption">
                     <div class="container carousel-content">
                         <h6 class="text-secondary h4 animated fadeInUp">Best IT Solutions</h6>
@@ -29,7 +29,7 @@
                         <a href="" class="ms-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn2 animated fadeInRight">Contact Us</button></a>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
