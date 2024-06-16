@@ -1,10 +1,10 @@
  <!-- Carousel Start -->
  <div class="container-fluid px-0" style="">
     <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
-        <ol class="carousel-indicators">
+        {{-- <ol class="carousel-indicators">
             <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
             <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
-        </ol>
+        </ol> --}}
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
                 <img src="{{asset('front/img/carousel-3.jpg')}}" class="img-fluid" alt="First slide">
