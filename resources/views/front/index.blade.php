@@ -5,8 +5,8 @@
 @include('front.about')
 @include('front.services')
 @include('front.projects')
-@include('front.blog')
+{{-- @include('front.blog') --}}
 @include('front.team')
-@include('front.testimonial')
+{{-- @include('front.testimonial') --}}
 @include('front.contact')
 @include('front.footer')

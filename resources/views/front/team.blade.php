@@ -9,7 +9,7 @@
                 <div class="team-content">
                     <div class="team-img-icon">
                         <div class="team-img rounded-circle">
-                            <img src="img/team-1.jpg" class="img-fluid w-100 rounded-circle" alt="">
+                            <img src="{{asset('front/img/team-1.jpg')}}" class="img-fluid w-100 rounded-circle" alt="">
                         </div>
                         <div class="team-name text-center py-3">
                             <h4 class="">Full Name</h4>
@@ -28,7 +28,7 @@
                 <div class="team-content">
                     <div class="team-img-icon">
                         <div class="team-img rounded-circle">
-                            <img src="img/team-2.jpg" class="img-fluid w-100 rounded-circle" alt="">
+                            <img src="{{asset('front/img/team-2.jpg')}}" class="img-fluid w-100 rounded-circle" alt="">
                         </div>
                         <div class="team-name text-center py-3">
                             <h4 class="">Full Name</h4>
@@ -47,7 +47,7 @@
                 <div class="team-content">
                     <div class="team-img-icon">
                         <div class="team-img rounded-circle">
-                            <img src="img/team-3.jpg" class="img-fluid w-100 rounded-circle" alt="">
+                            <img src="{{asset('front/img/team-3.jpg')}}" class="img-fluid w-100 rounded-circle" alt="">
                         </div>
                         <div class="team-name text-center py-3">
                             <h4 class="">Full Name</h4>
@@ -66,7 +66,7 @@
                 <div class="team-content">
                     <div class="team-img-icon">
                         <div class="team-img rounded-circle">
-                            <img src="img/team-4.jpg" class="img-fluid w-100 rounded-circle" alt="">
+                            <img src="{{asset('front/img/team-4.jpg')}}" class="img-fluid w-100 rounded-circle" alt="">
                         </div>
                         <div class="team-name text-center py-3">
                             <h4 class="">Full Name</h4>
