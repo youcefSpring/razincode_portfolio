@@ -2,3 +2,6 @@
 @include('front.navbar')
 @include('front.carousel')
 @include('front.fact')
+@include('front.services')
+@include('front.projects')
+@include('front.footer')
