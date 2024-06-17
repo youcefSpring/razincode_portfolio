@@ -26,4 +26,9 @@
 
         <!-- Template Stylesheet -->
         <link href="{{ asset('front/css/style.css')}}" rel="stylesheet">
+        <style>
+            *{
+                direction: rtl;
+            }
+        </style>
     </head>

@@ -10,11 +10,18 @@
                 </div>
             </div>
             <div class="col-lg-7 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".5s">
-                <h5 class="text-primary">About Us</h5>
-                <h1 class="mb-4">About HighTech Agency And It's Innovative IT Solutions</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur quis purus ut interdum. Pellentesque aliquam dolor eget urna ultricies tincidunt. Nam volutpat libero sit amet leo cursus, ac viverra eros tristique. Morbi quis quam mi. Cras vel gravida eros. Proin scelerisque quam nec elementum viverra. Suspendisse viverra hendrerit diam in tempus. Etiam gravida justo nec erat vestibulum, et malesuada augue laoreet.</p>
-                <p class="mb-4">Pellentesque aliquam dolor eget urna ultricies tincidunt. Nam volutpat libero sit amet leo cursus, ac viverra eros tristique. Morbi quis quam mi. Cras vel gravida eros. Proin scelerisque quam nec elementum viverra. Suspendisse viverra hendrerit diam in tempus.</p>
-                <a href="" class="btn btn-secondary rounded-pill px-5 py-3 text-white">More Details</a>
+                <h1 class="text-primary">
+                    من نحن
+                </h1>
+                <h4 class="mb-4">
+                    شركة متخصصة في تقديم حلول البرمجيات المتكاملة والمتطورة
+                </h4>
+                <p>
+نسعى لنكون روادًا في صناعة التكنولوجيا من خلال تقديم حلول مبتكرة وفعالة تسهم في تحويل الأفكار إلى واقع ملموس يساهم في تحسين الحياة اليومية وتحقيق النجاح التجاري.
+
+<br>
+نلتزم بتقديم حلول تقنية مبتكرة تلبي احتياجات السوق المتغيرة وتفوق توقعات عملائنا. نعمل على بناء علاقات شراكة طويلة الأمد مع عملائنا من خلال توفير خدمات متميزة تعتمد على أحدث التقنيات وأفضل الممارسات.
+                </p>
             </div>
         </div>
     </div>

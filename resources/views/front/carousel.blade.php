@@ -1,20 +1,20 @@
  <!-- Carousel Start -->
  <div class="container-fluid px-0" style="" >
     <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
-        <ol class="carousel-indicators">
+        {{-- <ol class="carousel-indicators">
             <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
             <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
-        </ol>
+        </ol> --}}
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
-                <img src="{{asset('front/img/carousel-3.jpg')}}" class="img-fluid" alt="First slide" style="height: 50%;">
+                <img src="{{asset('front/img/project-3.jpg')}}" class="img-fluid" alt="First slide" style="height: 50%;">
                 <div class="carousel-caption">
                     <div class="container carousel-content">
                         <h6 class="text-secondary h4 animated fadeInUp">Best IT Solutions</h6>
                         <h1 class="text-white display-1 mb-4 animated fadeInRight">An Innovative IT Solutions Agency</h1>
                         <p class="mb-4 text-white fs-5 animated fadeInDown">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Pellentesque aliquam dolor eget urna ultricies tincidunt.</p>
-                        <a href="" class="me-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn1 animated fadeInLeft">Read More</button></a>
-                        <a href="" class="ms-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn2 animated fadeInRight">Contact Us</button></a>
+                        {{-- <a href="" class="me-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn1 animated fadeInLeft">Read More</button></a>
+                        <a href="" class="ms-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn2 animated fadeInRight">Contact Us</button></a> --}}
                     </div>
                 </div>
             </div>
