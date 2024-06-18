@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Portfolio Admin</title>
+    <title>Portfolio Razincode</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="{{ asset('import/assets/admin/vendors/mdi/css/materialdesignicons.min.css')}}">
     <link rel="stylesheet" href="{{ asset('import/assets/admin/vendors/css/vendor.bundle.base.css')}}">
@@ -24,8 +24,8 @@
     <div class="container-scroller">
       <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
         <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-          <a class="navbar-brand brand-logo" href="{{ route('admin.index')}}"><img src="{{ asset('import/assets/admin/images/logo.svg')}}" alt="logo" /></a>
-          <a class="navbar-brand brand-logo-mini" href="index.html"><img src="{{ asset('import/assets/admin/images/logo-mini.svg')}}" alt="logo" /></a>
+          <a class="navbar-brand brand-logo" href="{{ route('admin.index')}}">Dashboard</a>
+          {{-- <a class="navbar-brand brand-logo-mini" href="index.html"><img src="{{ asset('import/assets/admin/images/logo-mini.svg')}}" alt="logo" /></a> --}}
         </div>
         <div class="navbar-menu-wrapper d-flex align-items-stretch">
           <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
@@ -64,13 +64,13 @@
                 <i class="mdi mdi-home menu-icon"></i>
               </a>
             </li>
-            <li class="nav-item">
+            {{-- <li class="nav-item">
               <a class="nav-link" href="{{ route('admin.aboutme.index')}}">
                 <span class="menu-title">Aboutme</span>
                 <i class="mdi mdi-contacts menu-icon"></i>
               </a>
-            </li>
-            <li class="nav-item">
+            </li> --}}
+            {{-- <li class="nav-item">
               <a class="nav-link" data-bs-toggle="collapse" href="#ui-qualification" aria-expanded="false" aria-controls="ui-basic">
                 <span class="menu-title">Qualifications</span>
                 <i class="menu-arrow"></i>
@@ -83,7 +83,7 @@
                   <li class="nav-item"> <a class="nav-link" href="{{ route('admin.qualification.index') }}">Show All</a></li>
                 </ul>
               </div>
-            </li>
+            </li> --}}
             <li class="nav-item">
               <a class="nav-link" data-bs-toggle="collapse" href="#ui-portfolio" aria-expanded="false" aria-controls="ui-basic">
                 <span class="menu-title">Portfolios</span>
@@ -98,23 +98,36 @@
               </div>
             </li>
             <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="collapse" href="#ui-portfolio" aria-expanded="false" aria-controls="ui-basic">
+                  <span class="menu-title">Team</span>
+                  <i class="menu-arrow"></i>
+                  <i class="mdi mdi-contacts menu-icon"></i>
+                </a>
+                <div class="collapse" id="ui-portfolio">
+                  <ul class="nav flex-column sub-menu">
+                    <li class="nav-item"> <a class="nav-link" href="{{ route('admin.team.index') }}">List</a></li>
+                    {{-- <li class="nav-item"> <a class="nav-link" href="{{ route('admin.portfolio.index') }}">Portfolio</a></li> --}}
+                  </ul>
+                </div>
+              </li>
+            <li class="nav-item">
               <a class="nav-link" href="{{ route('admin.service.index') }}">
                 <span class="menu-title">Services</span>
                 <i class="mdi mdi-format-list-bulleted menu-icon"></i>
               </a>
             </li>
-            <li class="nav-item">
+            {{-- <li class="nav-item">
               <a class="nav-link" href="{{ route('admin.skill.index') }}">
                 <span class="menu-title">Skills</span>
                 <i class="mdi mdi-puzzle menu-icon"></i>
               </a>
-            </li>
-            <li class="nav-item">
+            </li> --}}
+            {{-- <li class="nav-item">
               <a class="nav-link" href="{{ route('admin.review.index') }}">
                 <span class="menu-title">Reviews</span>
                 <i class="mdi mdi-thumbs-up-down menu-icon"></i>
               </a>
-            </li>
+            </li> --}}
             <li class="nav-item">
               <a class="nav-link" href="{{ route('admin.setting.index') }}">
                 <span class="menu-title">Settings</span>
@@ -129,7 +142,7 @@
               </form> --}}
               <form method="POST" action="{{ route('logout') }}">
                @csrf
-                <button class="btn btn-block btn-lg btn-danger mt-4">SignOut</button>
+                <button class="btn btn-block btn-lg btn-danger mt-4">Logout</button>
               </form>
                 {{-- <div class="mt-4">
                   <div class="border-bottom">

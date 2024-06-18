@@ -30,5 +30,8 @@
             h1,h4,p{
                 direction: rtl;
             }
+            p{
+                font-size: 1.3rem;
+            }
         </style>
     </head>

@@ -10,6 +10,7 @@ use App\Http\Controllers\Admin\PortfolioController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Admin\ReviewController;
 use App\Http\Controllers\Admin\SettingController;
+use App\Http\Controllers\Admin\TeamController;
 use App\Http\Controllers\ContactController;
 use App\Mail\ContactMail;
 use Illuminate\Support\Facades\Auth;
@@ -45,6 +46,7 @@ Route::middleware(['auth','isAdmin'])->name('admin.')->prefix('/admin')->group(f
     Route::resource('/portfolio', PortfolioController::class);
     Route::resource('/aboutme', AboutmeController::class);
     Route::resource('/setting', SettingController::class);
+    Route::resource('/team', TeamController::class);
 });
 
 Auth::routes();
