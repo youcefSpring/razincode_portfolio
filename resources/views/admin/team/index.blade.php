@@ -17,8 +17,9 @@
                             <tr>
                               <th> # </th>
                               <th> Photo </th>
-                              <th> Title </th>
-                              <th> Category </th>
+                              <th> Name </th>
+                              <th> Description </th>
+                              <th> role </th>
                               <th> Manage </th>
                             </tr>
                           </thead>
@@ -28,14 +29,15 @@
                               <td> {{ $portfolio -> id }} </td>
                               <td> <img src="{{ asset("storage/$portfolio->image") }}" alt="image"> </td>
                               {{-- <td> <i class="fab {{ $service -> icon }}"  aria-hidden="true"></i></td> --}}
-                              <td> {{ $portfolio -> title }} </td>
-                              <td> {{ $portfolio -> category-> name }} </td>
+                              <td> {{ $portfolio ->name }} </td>
+                              <td> {{ $portfolio ->description }} </td>
+                              <td> {{ $portfolio ->role }} </td>
                               <td>
                                 <button type="button" class="btn btn-success btn-sm me-1 " onclick="location.href='{{ route('admin.team.edit', $portfolio->id) }}';">Edit</button>
                                   <form type="submit" method="POST" style="display: inline" action="{{ route('admin.team.destroy', $portfolio->id)}}" onsubmit="return confirm('Are you sure?')">
                                     @csrf
                                     @method('DELETE')
-                                <button type="submit" class="btn btn-danger btn-sm" style="style="display: inline"">Delete</button>
+                                <button type="submit" class="btn btn-danger btn-sm" style="style="display: inline">Delete</button>
                                 </form>
                             </td>
                             </tr>

@@ -105,13 +105,13 @@ class TeamController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Portfolio $portfolio)
+    public function destroy(Team $portfolio)
     {
         if($portfolio->image != null){
             Storage::delete($portfolio->image);
         }
         $portfolio -> delete();
-        return back()->with('message', 'Portfolio Deleted');
+        return back()->with('message', 'Team Deleted');
     }
 
     public function search(Request $request)

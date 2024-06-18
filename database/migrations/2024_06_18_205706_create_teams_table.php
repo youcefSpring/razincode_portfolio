@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('name')->nullable();
             $table->string('role')->nullable();
             $table->string('description')->nullable();
+            $table->string('photo')->nullable();
             $table->timestamps();
         });
     }
