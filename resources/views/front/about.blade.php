@@ -1,11 +1,11 @@
-<div class="container-fluid py-5 my-5">
+<div class="container-fluid py-5 my-5" id="about">
     <div class="container pt-5">
         <div class="row g-5">
             <div class="col-lg-5 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".3s">
                 <div class="h-100 position-relative">
-                    <img src="{{ asset('front/img/about-1.jpg')}}" class="img-fluid w-75 rounded" alt="" style="margin-bottom: 25%;">
+                    <img src="{{ asset('front/img/about-5.jpg')}}" class="img-fluid w-75 rounded" alt="" style="margin-bottom: 25%;">
                     <div class="position-absolute w-75" style="top: 25%; left: 25%;">
-                        <img src="{{ asset('front/img/about-2.jpg')}}" class="img-fluid w-100 rounded" alt="">
+                        <img src="{{ asset('front/img/about-4.jpg')}}" class="img-fluid w-100 rounded" alt="">
                     </div>
                 </div>
             </div>
@@ -14,7 +14,7 @@
                     من نحن
                 </h1>
                 <h4 class="mb-4">
-                    شركة متخصصة في تقديم حلول البرمجيات المتكاملة والمتطورة
+                    وكالة متخصصة في تقديم حلول البرمجيات المتكاملة والمتطورة
                 </h4>
                 <p>
 نسعى لنكون روادًا في صناعة التكنولوجيا من خلال تقديم حلول مبتكرة وفعالة تسهم في تحويل الأفكار إلى واقع ملموس يساهم في تحسين الحياة اليومية وتحقيق النجاح التجاري.
