@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Category;
 use App\Models\Portfolio;
 use App\Models\Team;
+use App\Services\FileUploadService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
@@ -36,27 +37,38 @@ class TeamController extends Controller
      */
     public function store(Request $request)
     {
-        $validated = $request->validate([
-            'title' => 'required|min:4',
-            'project_url' => 'required',
-            'image' => 'required|image|mimes:jpeg,png,jpg|max:2048',
-            'cat_id' => 'required|exists:categories,id'
-        ]);
+        // $validated = $request->validate([
+        //     'title' => 'required|min:4',
+        //     'project_url' => 'required',
+        //     'image' => 'required|image|mimes:jpeg,png,jpg|max:2048',
+        //     'cat_id' => 'required|exists:categories,id'
+        // ]);
 
-        $portfolio = new Portfolio();
-        $portfolio->title = $validated['title'];
-        $portfolio->project_url = $validated['project_url'];
-        $portfolio->cat_id = $request->cat_id;
+        $portfolio = new Team();
+        $portfolio->name = $request->name;
+        $portfolio->role = $request->role;
+        $portfolio->description = $request->description;
+        // $portfolio->name = $request->name;
 
-        if($request->hasfile('image')){
-            $get_file = $request->file('image')->store('images/portfolios');
-            $portfolio->image = $get_file;
+        if($request->hasfile('photo')){
+            $path = 'uploads/team'; // Set your desired path
+        $attributes = []; // Optionally add custom attributes
+
+        $arr=$this->fileUploadService->upload($request, $path, $attributes);
+
+            // $get_file = $request->file('image')->store('images/portfolios');
+            // $portfolio->image = $get_file;
         }
-
+        $portfolio->photo=$arr['path'];
         $portfolio->save();
         return to_route('admin.team.index')->with('message','Portfolio Added');
     }
+    private $fileUploadService;
 
+    public function __construct(FileUploadService $fileUploadService)
+    {
+        $this->fileUploadService = $fileUploadService;
+    }
 
     /**
      * Show the form for editing the specified resource.
@@ -110,7 +122,7 @@ class TeamController extends Controller
         if($portfolio->image != null){
             Storage::delete($portfolio->image);
         }
-        $portfolio -> delete();
+        $portfolio->delete();
         return back()->with('message', 'Team Deleted');
     }
 

@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('role')->nullable();
             $table->string('description')->nullable();
             $table->string('photo')->nullable();
+            $table->integer('status')->default(1);
             $table->timestamps();
         });
     }

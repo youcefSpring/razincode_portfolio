@@ -6,7 +6,10 @@
 @include('front.services')
 @include('front.projects')
 {{-- @include('front.blog') --}}
-@include('front.team')
+@if(isset($teams) && count($teams) > 0)
+
+@include('front.team',['teams'=>$teams])
+@endif
 {{-- @include('front.testimonial') --}}
 @include('front.contact')
 @include('front.footer')

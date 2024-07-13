@@ -9,6 +9,7 @@ use App\Models\Review;
 use App\Models\Service;
 use App\Models\Setting;
 use App\Models\Skill;
+use App\Models\Team;
 use App\Models\User;
 use Illuminate\Http\Request;
 
@@ -46,8 +47,11 @@ class HomeController extends Controller
         $portfolios= Portfolio::with('category')->orderBy('id', 'desc')->take(6)->get();
 
         $setting = Setting::first();
+        $teams=Team::all();
+        // return count($teams);
 
         return view('front.index',compact('user','experiences','educations','skills',
-                                    'services','categories','portfolios','setting','reviewers'));
+                                    'services','categories','portfolios','setting','reviewers',
+                                    'teams'));
     }
 }
