@@ -1,7 +1,7 @@
 @extends('admin.layouts.admin')
 
 @section('content')
-{{-- 
+{{--
 <div class="main-panel">
     <div class="content-wrapper"> --}}
 <div class="col-12 grid-margin stretch-card">
@@ -41,9 +41,9 @@
             </div>
             <div class="form-group">
               <label>File upload</label>
-              <input type="file" name="image" class="file-upload-default">
+              <input type="file" name="photo" class="file-upload-default">
               <div class="input-group col-xs-12">
-                <input type="text" class="form-control file-upload-info" disabled="" placeholder="Upload Image">
+                <input type="text" name="photo" class="form-control file-upload-info" disabled="" placeholder="Upload Image">
                 <span class="input-group-append">
                   <button class="file-upload-browse btn btn-gradient-primary" type="button">Upload</button>
                 </span>

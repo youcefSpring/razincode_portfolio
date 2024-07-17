@@ -4,7 +4,9 @@
 {{-- @include('front.fact') --}}
 @include('front.about')
 @include('front.services')
-@include('front.projects')
+@if(isset($portfolios) && count($portfolios) > 0)
+@include('front.projects',['portfolios'=>$portfolios])
+@endif
 {{-- @include('front.blog') --}}
 @if(isset($teams) && count($teams) > 0)
 

@@ -3,7 +3,7 @@
 @section('content')
 
                 <div class="col-lg-12 grid-margin stretch-card">
-                    
+
                     <div class="card">
                       <div class="card-body">
                         <h4 class="card-title">portfolios Records</h4>
@@ -26,11 +26,11 @@
                             @foreach ($portfolios as $portfolio)
                             <tr>
                               <td> {{ $portfolio -> id }} </td>
-                              <td> <img src="{{ asset("storage/$portfolio->image") }}" alt="image"> </td>
+                              <td> <img src="{{ asset($portfolio->image) }}" alt="image"> </td>
                               {{-- <td> <i class="fab {{ $service -> icon }}"  aria-hidden="true"></i></td> --}}
                               <td> {{ $portfolio -> title }} </td>
                               <td> {{ $portfolio -> category-> name }} </td>
-                              <td> 
+                              <td>
                                 <button type="button" class="btn btn-success btn-sm me-1 " onclick="location.href='{{ route('admin.portfolio.edit', $portfolio->id) }}';">Edit</button>
                                   <form type="submit" method="POST" style="display: inline" action="{{ route('admin.portfolio.destroy', $portfolio->id)}}" onsubmit="return confirm('Are you sure?')">
                                     @csrf
@@ -46,7 +46,7 @@
                       </div>
                     </div>
                   </div>
-{{-- 
+{{--
             </div>
         </div> --}}
 @endsection

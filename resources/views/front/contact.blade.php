@@ -3,7 +3,6 @@
         <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
             <h5 class="text-primary">تواصل معنا</h5>
             <h1 class="mb-3">اتصل لأي استفسار</h1>
-            <p class="mb-2">نموذج الاتصال غير نشط حاليًا. احصل على نموذج اتصال وظيفي وعامل مع Ajax وPHP في بضع دقائق. فقط قم بنسخ ولصق الملفات، وأضف القليل من الكود وستنتهي. <a href="https://htmlcodex.com/contact-form">حمل الآن</a>.</p>
         </div>
         <div class="contact-detail position-relative p-5">
             <div class="row g-5 mb-5 justify-content-center">

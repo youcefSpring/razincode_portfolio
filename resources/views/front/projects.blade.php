@@ -5,84 +5,24 @@
             <h1>مشاريعنا المكتملة حديثًا</h1>
         </div>
         <div class="row g-5">
+            @foreach ($portfolios as $p )
             <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
                 <div class="project-item">
                     <div class="project-img">
-                        <img src="{{ asset('front/img/project-1.jpg')}}" class="img-fluid w-100 rounded" alt="">
+                        <img src="{{ asset($p->image)}}" class="img-fluid w-100 rounded" alt="">
                         <div class="project-content">
                             <a href="#" class="text-center">
-                                <h4 class="text-secondary">تصميم المواقع</h4>
-                                <p class="m-0 text-white">تحليل المواقع</p>
+                                <h4 class="text-secondary">
+                                    {{$p->category->name}}</h4>
+                                <p class="m-0 text-white">{{$p->description}}</p>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
-                <div class="project-item">
-                    <div class="project-img">
-                        <img src="{{ asset('front/img/project-2.jpg')}}" class="img-fluid w-100 rounded" alt="">
-                        <div class="project-content">
-                            <a href="#" class="text-center">
-                                <h4 class="text-secondary">الأمن السيبراني</h4>
-                                <p class="m-0 text-white">أساسيات الأمن السيبراني</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
-                <div class="project-item">
-                    <div class="project-img">
-                        <img src="{{ asset('front/img/project-3.jpg')}}" class="img-fluid w-100 rounded" alt="">
-                        <div class="project-content">
-                            <a href="#" class="text-center">
-                                <h4 class="text-secondary">معلومات الجوال</h4>
-                                <p class="m-0 text-white">الهاتف القادم</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
-                <div class="project-item">
-                    <div class="project-img">
-                        <img src="{{ asset('front/img/project-4.jpg')}}" class="img-fluid w-100 rounded" alt="">
-                        <div class="project-content">
-                            <a href="#" class="text-center">
-                                <h4 class="text-secondary">تطوير المواقع</h4>
-                                <p class="m-0 text-white">تحليل المواقع</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
-                <div class="project-item">
-                    <div class="project-img">
-                        <img src="{{ asset('front/img/project-5.jpg')}}" class="img-fluid w-100 rounded" alt="">
-                        <div class="project-content">
-                            <a href="#" class="text-center">
-                                <h4 class="text-secondary">التسويق الرقمي</h4>
-                                <p class="m-0 text-white">تحليل التسويق</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
-                <div class="project-item">
-                    <div class="project-img">
-                        <img src="{{ asset('front/img/project-6.jpg')}}" class="img-fluid w-100 rounded" alt="">
-                        <div class="project-content">
-                            <a href="#" class="text-center">
-                                <h4 class="text-secondary">بحث الكلمات المفتاحية</h4>
-                                <p class="m-0 text-white">تحليل الكلمات المفتاحية</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            @endforeach
+
+
         </div>
     </div>
 </div>

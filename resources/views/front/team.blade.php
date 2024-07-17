@@ -4,9 +4,9 @@
             <h5 class="text-primary">فريقنا</h5>
             <h1>تعرف على فريقنا الخبير</h1>
         </div>
-        <div class="owl-carousel team-carousel wow fadeIn" data-wow-delay=".5s" >
+        <div class="row">
             @foreach ($teams as $t )
-            <div class="rounded team-item" >
+            <div class="col-md-{{$teams->count() < 3 ? 6 : 3}} col-lg-{{$teams->count() < 3 ? 6 : 3}}">
                 <div class="team-content">
                     <div class="team-img-icon">
                         <div class="team-img rounded-circle">

@@ -7,9 +7,10 @@ use App\Models\Category;
 use App\Models\Portfolio;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
-
+use App\Services\FileUploadService;
 class PortfolioController extends Controller
 {
+    private FileUploadService $fileUploadService;
     /**
      * Display a listing of the resource.
      *
@@ -40,10 +41,11 @@ class PortfolioController extends Controller
      */
     public function store(Request $request)
     {
+        // dd($request);
         $validated = $request->validate([
             'title' => 'required|min:4',
             'project_url' => 'required',
-            'image' => 'required|image|mimes:jpeg,png,jpg|max:2048',
+            'photo' => 'required|image|mimes:jpeg,png,jpg|max:2048',
             'cat_id' => 'required|exists:categories,id'
         ]);
 
@@ -52,9 +54,21 @@ class PortfolioController extends Controller
         $portfolio->project_url = $validated['project_url'];
         $portfolio->cat_id = $request->cat_id;
 
-        if($request->hasfile('image')){
-            $get_file = $request->file('image')->store('images/portfolios');
-            $portfolio->image = $get_file;
+        // if($request->hasfile('image')){
+        //     $get_file = $request->file('image')->store('images/portfolios');
+        //     $portfolio->image = $get_file;
+        // }
+
+        // $portfolio->save();
+        if($request->hasfile('photo')){
+            $path = 'images/portfolios'; // Set your desired path
+        $attributes = []; // Optionally add custom attributes
+
+        $arr=(new FileUploadService())->upload($request, $path, $attributes);
+
+            // $get_file = $request->file('image')->store('images/portfolios');
+            // $portfolio->image = $get_file;
+            $portfolio->image=$arr['path'];
         }
 
         $portfolio->save();
