@@ -13,7 +13,9 @@
                         </div>
                         <div class="ms-3">
                             <h4 class="text-primary">العنوان</h4>
-                            <a href="https://goo.gl/maps/Zd4BCynmTb98ivUJ6" target="_blank" class="h5">23 شارع رينك، نيويورك</a>
+                            <a href="https://maps.app.goo.gl/pnwSBBeBcyZFaGHv9" target="_blank" class="h5">
+                                بومرداس
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -24,7 +26,7 @@
                         </div>
                         <div class="ms-3">
                             <h4 class="text-primary">اتصل بنا</h4>
-                            <a class="h5" href="tel:+0123456789" target="_blank">+012 3456 7890</a>
+                            <a class="h5" href="tel:+213697898885" target="_blank">(+213) 0697898885</a>
                         </div>
                     </div>
                 </div>
@@ -41,10 +43,9 @@
                 </div>
             </div>
             <div class="row g-5">
-                <div class="col-lg-6 wow fadeIn" data-wow-delay=".3s">
-                    <div class="p-5 h-100 rounded contact-map">
-                        <iframe class="rounded w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.4710403339755!2d-73.82241512404069!3d40.685622471397615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c26749046ee14f%3A0xea672968476d962c!2s123rd%20St%2C%20Queens%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1686493221834!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
+                {{-- <div class="col-lg-6 wow fadeIn" data-wow-delay=".3s">
+                    <div class="p-5 h-100 rounded contact-map"> --}}
+{{-- <iframe  class="rounded w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d72333.27713184968!2d3.431105201349369!3d36.75354526670857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128e68dcc89e5b23%3A0x84e914279405eb13!2sBoumerdes!5e0!3m2!1sen!2sdz!4v1721319796727!5m2!1sen!2sdz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    </div>
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay=".5s">
                     <div class="p-5 rounded contact-form">
@@ -64,8 +65,8 @@
                             <button class="btn bg-primary text-white py-3 px-5" type="button">إرسال رسالة</button>
                         </div>
                     </div>
-                </div>
-            </div>
+                </div> --}}
+        </div>
         </div>
     </div>
 </div>
