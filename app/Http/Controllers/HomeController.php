@@ -45,7 +45,7 @@ class HomeController extends Controller
         $reviewers = Review::orderBy('id', 'desc')->take(5)->get();
 
         $portfolios= Portfolio::with('category')->orderBy('id', 'desc')->take(6)->get();
-
+        // dd($portfolios);
         $setting = Setting::first();
         $teams=Team::all();
         // return count($teams);

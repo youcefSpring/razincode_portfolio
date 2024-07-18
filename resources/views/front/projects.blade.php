@@ -11,7 +11,7 @@
                     <div class="project-img">
                         <img src="{{ asset($p->image)}}" class="img-fluid w-100 rounded" alt="">
                         <div class="project-content">
-                            <a href="#" class="text-center">
+                            <a href="{{$p->project_url}}" class="text-center" target="_blank">
                                 <h4 class="text-secondary">
                                     {{$p->category->name}}</h4>
                                 <p class="m-0 text-white">{{$p->description}}</p>
